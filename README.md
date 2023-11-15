@@ -38,9 +38,9 @@ Following this change, it should now be possible to compile sketches for this bo
 ### Display
 I find U8g2 (and U8x8) to be the most straightforward to use. Your setup line will depend on correct pin numbering to be passed to the constructor:
 
-> OLED_SDA = 17
-> OLED_SCL = 18
-> OLED_RST = 21
+> OLED_SDA = 17  
+> OLED_SCL = 18  
+> OLED_RST = 21  
 
 So your constructor for U8g2 might look like this:
 
