@@ -66,7 +66,10 @@ void doLife(uint8_t board[BOARD_HEIGHT][BOARD_WIDTH], uint8_t mask){
           board[i][j] |= alt_mask;
           u8g2.drawPixel(j, i);
         }
-      } else if ((board[i][j] & NEIGHBORS) == 3) board[i][j] |= alt_mask;
+      } else if ((board[i][j] & NEIGHBORS) == 3) {
+        board[i][j] |= alt_mask;
+        u8g2.drawPixel(j, i);
+      }
     }
   }
   u8g2.sendBuffer();
