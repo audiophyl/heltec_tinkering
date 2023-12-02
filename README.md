@@ -47,7 +47,7 @@ So your constructor for U8g2 might look like this:
 ```
 #include <U8g2lib.h>
 // set up display for heltec_wifi_kit_32_v3
-U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, /* clock=*/ 18, /* data=*/ 17, /* reset=*/ 21);
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ 21, /* clock=*/ 18, /* data=*/ 17);
 ```
 
 ## Links
