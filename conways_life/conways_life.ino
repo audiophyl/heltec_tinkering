@@ -6,9 +6,8 @@
 #define BOARD_WIDTH 128
 #define BOARD_HEIGHT 64
 
-
 // set up display for heltec_wifi_kit_32_v3
-U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, /* clock=*/ 18, /* data=*/ 17, /* reset=*/ 21);
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ 21, /* clock=*/ 18, /* data=*/ 17);
 
 // set up game board
 uint8_t game_board[BOARD_HEIGHT][BOARD_WIDTH];
